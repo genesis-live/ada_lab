@@ -42,3 +42,15 @@ int main(){
         }
     }
 }
+/*
+Enter the number of nodes: 6
+Enter the graph data: 
+0 0 1 1 0 0
+0 0 0 1 1 0
+0 0 0 1 0 1
+0 0 0 0 0 1
+0 0 0 0 0 1
+0 0 0 0 0 0
+
+Topological order: 1 2 3 4 5 6
+*/
