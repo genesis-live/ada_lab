@@ -15,6 +15,7 @@ void dijkstra(int c[10][10], int n, int s, int d[10]){
                 min=d[j];
                 u=j;
             }
+        v[u]=1;
         for(j=1; j<=n; j++)
             if(v[j]==0 && (d[u]+c[u][j])<d[j])
                 d[j]=d[u]+c[u][j];
@@ -37,3 +38,18 @@ int main(){
         printf("Shorstest distance from %d to %d is %d.\n", s, i, d[i]);
     return 0;
 }
+/*
+Enter the number of nodes: 5
+Enter the graph data: 
+0 10 3 999 999
+999 0 1 2 999
+999 4 0 8 2
+999 999 999 0 7
+999 999 999 9 0
+Enter the source node: 5 
+Shorstest distance from 5 to 1 is 999.
+Shorstest distance from 5 to 2 is 999.
+Shorstest distance from 5 to 3 is 999.
+Shorstest distance from 5 to 4 is 9.
+Shorstest distance from 5 to 5 is 0.
+*/
