@@ -39,3 +39,17 @@ int main(){
     }
     return 0;
 }
+/*
+Enter the n value: 9
+Enter the set in increasing order: 
+1 2 3 4 5 6 7 8 9
+Enter the max suset value: 9
+1 2 6 
+1 3 5 
+1 8   
+2 3 4 
+2 7   
+3 6   
+4 5
+9
+*/
